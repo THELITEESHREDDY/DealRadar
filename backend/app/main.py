@@ -1,7 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,BackgroundTasks
 from app.database.models import SQLModel
 from app.database.sessions import engine
 from app.api.routes import auth, dashboard
+
+
+
 
 #pydantic models
 
@@ -37,11 +40,6 @@ async def welcome():
     return {"message": "Welcome"}
 
 
-
-@app.post("/search")
-async def search(product:str):
-
-    sites=["https://www.amazon.in/","https://www.flipkart.com/"]
 
 
 

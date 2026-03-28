@@ -1,4 +1,20 @@
 from sqlmodel import SQLModel, Field
+from datetime import datetime
+from typing import Optional
+
+
+class Site(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    name: str
+    base_url: str
+
+
+class PriceHistory(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    product_name: str
+    site_name: str
+    price: str
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
 
 class user_db(SQLModel,table=True):
     id: int|None =Field(default=None, primary_key=True,index=True)

@@ -5,3 +5,4 @@ pydantic
 python-multipart
 PyJWT
 pwdlib
+selenium webdriver-manager
