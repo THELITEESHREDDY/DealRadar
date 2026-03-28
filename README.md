@@ -30,7 +30,7 @@ app/
 │   ├── config.py
 │   ├── security.py
 │   ├── jwt.py
-├── db/
+├── database/
 │   ├── models.py
 │   ├── session.py
 ├── schemas/
@@ -38,8 +38,6 @@ app/
 │   ├── site.py
 │   ├── order.py
 │   ├── token.py
-├── services/
-│   ├── auth_service.py
 ```
 
 ---
@@ -59,7 +57,7 @@ app/
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/THELITEESHREDDY/DealRadar
 cd dealradar-backend
 ```
 
